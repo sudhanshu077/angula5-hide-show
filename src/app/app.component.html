@@ -1,0 +1,42 @@
+<div class="container">
+  <h2>Hide and show using hidden attribute</h2>
+
+  <button class="accordion" (click)="section['first'] = !section['first']">Section 1</button>
+  <div class="panel" [hidden]="!section['first']">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <button class="accordion" (click)="section['second'] = !section['second']">Section 2</button>
+  <div class="panel" [hidden]="!section['second']">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <button class="accordion" (click)="section['third'] = !section['third']">Section 3</button>
+  <div class="panel" [hidden]="!section['third']">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+
+  <h2 class="margin-top">Hide and show using ngIf attribute</h2>
+
+  <button class="accordion" (click)="section['fourth'] = !section['fourth']">Section 1</button>
+  <div class="panel" *ngIf="section['fourth']">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <button class="accordion" (click)="section['fifth'] = !section['fifth']">Section 2</button>
+  <div class="panel" *ngIf="section['fifth']">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <button class="accordion" (click)="section['sixth'] = !section['sixth']">Section 3</button>
+  <div class="panel" *ngIf="section['sixth']">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+</div>
